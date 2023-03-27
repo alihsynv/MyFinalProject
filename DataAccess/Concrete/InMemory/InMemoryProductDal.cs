@@ -1,4 +1,5 @@
-﻿using Entities.Concrete;
+﻿using DataAccess.Abstract;
+using Entities.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Concrete.InMemory
 {
-    public class InMemoryProductDal
+    public class InMemoryProductDal : IProductDal
     {
         List<Product> _products;
         public InMemoryProductDal()
